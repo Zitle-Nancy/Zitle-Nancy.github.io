@@ -118,6 +118,7 @@ body  {
 .bt-menu ul:first-of-type {
 	top: 75px;
 	left: 0;
+	font-family: 'Josefin Sans', 'Sans-serif';
 }
 
 .bt-menu ul:nth-of-type(2) {
