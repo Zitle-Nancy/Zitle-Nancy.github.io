@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 body{
 	margin: 0;
 	padding: 0;
@@ -13,6 +14,23 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
+}
+#fondo-sobre-mi{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: 
+	linear-gradient(
+		rgba(32,37,43,.8),
+		rgba(73,76,82,.6)
+		),
+	url('../assets/img/fondo2.jpg');
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
 	background-attachment: fixed;
 }
 .hidden{
@@ -31,10 +49,27 @@ body{
 	justify-content: center;
 	align-items:center;
 }
+.contenedor-sobre-mi{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	display: flex;
+}
 .contenedor-logo h2{
 	color: white;
 	font-family: 'Josefin Sans', 'Sans-serif';
 	font-size: 2rem;
+}
+.triangulo > img{
+	margin-top: -70px;
+	border:solid red 2px;
+	width: 200px;
+}
+.center{
+	text-align: center;
 }
 .splash{
 	background-color: #E5E2DB;
@@ -42,3 +77,7 @@ body{
 .splash h2 {
 	color: #774434;
 }
+.texto-blanco{
+	color: white;
+}
+

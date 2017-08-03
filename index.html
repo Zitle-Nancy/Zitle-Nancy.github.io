@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nancy Zitle</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/icons.css" />
 	<link rel="stylesheet" type="text/css" href="css/menu.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/menu-icon.css" /> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="contenedor-logo splash">
+	<div class="contenedor-logo splash secciones">
 		<img src="../assets/img/logo-splash.png" alt="Splash - Nancy Zitle">
 		<div>
 			<h2>
@@ -19,21 +19,14 @@
 			</h2>
 		</div>
 	</div>
-	<div class="container hidden">
+	<div class="contenedor hidden">
 		<nav id="bt-menu" class="bt-menu">
-			<!-- <div id="menu-icon-wrapper" class="menu-icon-wrapper bt-menu-trigger" style="visibility: hidden">
-				<svg width="1000px" height="1000px">
-					<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-					<path id="pathB" d="M 300 500 L 700 500"></path>
-					<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-				</svg>
-				<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-			</div> --><!-- menu-icon-wrapper -->
 			<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 			<ul id="dummy">
-				<li><a href="#">Sobre mí</a></li>
-				<li><a href="#">Habilidades</a></li>
-				<li><a href="#">Proyectos</a></li>
+				<li><a href="./">Inicio</a></li>
+				<li><a href="./acerca-de-mi">Sobre mí</a></li>
+				<li><a href="/habilidades">Habilidades</a></li>
+				<li><a href="/proyectos">Proyectos</a></li>
 			</ul>
 			<ul>
 				<li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
@@ -43,21 +36,38 @@
 			</ul>
 		</nav>
 		<!-- pagina inicial -->
-			<div class="contenedor-logo">
+			<section id="inicio" class="contenedor-logo secciones">
 				<img src="./assets/img/logo.png" alt="Nancy Zitle Juarez">
 				<div>
 					<h2>
 						Desarrolladora Front End | Ingeniera en Computación
 					</h2>
 				</div>
-			</div>
+			</section>
 		<!-- fin de pagina inicial -->
+		<!-- seccion sobre mi -->
+			<!-- <section id="fondo-sobre-mi" class=""> 
+				<div class="row">
+					<div class="col-md-11 col-md-offset-1">
+						<div class="triangulo center">
+							<img src="./assets/img/zitle-verde.png">
+						</div>
+						<p class="texto-blanco contenedor-sobre-mi">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aut aspernatur illum fuga earum necessitatibus atque unde, repudiandae quidem iste dolore, deserunt architecto quam vitae voluptas, repellendus similique natus. Iure!
+						</p>
+					</div>
+				</div>
+			</section> -->
+		<!-- fin sobre mi -->
+		
 	</div><!-- /container -->
-	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/classie.js"></script>
 	<!-- <script src="js/segment.min.js"></script>
 	<script src="js/ease.min.js"></script>
 	<script src="js/menu-icon.js"></script> -->
+	<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 	<script src="js/borderMenu.js"></script>
 	<script src="js/app.js"></script>
 </body>
