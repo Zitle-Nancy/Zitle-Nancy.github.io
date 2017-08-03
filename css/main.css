@@ -56,7 +56,6 @@ body{
 	bottom: 0;
 	right: 0;
 	z-index: -1;
-	display: flex;
 }
 .contenedor-logo h2{
 	color: white;
@@ -64,9 +63,8 @@ body{
 	font-size: 2rem;
 }
 .triangulo > img{
-	margin-top: -70px;
-	border:solid red 2px;
 	width: 200px;
+	border:solid red 4px;
 }
 .center{
 	text-align: center;

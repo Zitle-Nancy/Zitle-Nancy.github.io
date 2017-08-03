@@ -8,21 +8,13 @@
 	});
 
 	function index() {
-		$(".secciones").addClass("hidden");
-		$("#inicio").removeClass("hidden");
-		$("#inicio").addClass("contenedor-logo");
-		$('body').removeClass("fondo-sobre-mi");
+		$('#inicio').removeClass('hidden');
+		$('#fondo-sobre-mi').addClass('hidden');
 	};
 
 	function sobreMi(){
-		// secciones por defecto oculta a todo el elemento
-		$(".secciones").addClass("hidden");
-		$("#sobre-mi").addClass("contenedor-sobre-mi");
-		$("#sobre-mi").removeClass("hidden");
-		$("#inicio").removeClass("contenedor-logo");
-		$('body').addClass("fondo-sobre-mi");
-		
-		// $('body').css('background-image', 'url(images/image.jpg)');
+		$('#inicio').addClass('hidden');
+		$('#fondo-sobre-mi').removeClass('hidden');
 	}
 
 	var cargarPagina = function () {
