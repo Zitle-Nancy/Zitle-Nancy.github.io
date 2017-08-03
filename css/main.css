@@ -6,15 +6,25 @@ body{
 	height: 100%;
 	background: 
 	linear-gradient(
-		rgba(32,37,43,.8),
-		rgba(73,76,82,.6)
+		rgba(39,31,54,.9),
+		rgba(73,76,82,.8)
 		),
 	url('../assets/img/imagen1.jpg');
+	/*background-color: rgba(39,31,54,.8);*/
 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+}
+#texto-principal{
+	/*color: #ebaaab;
+	font-size: 2em;
+	font-weight: bold;*/
+	color:#ebaaab;
+	font-family: 'Josefin Sans', 'Sans-serif';
+	font-size: 2em;
+	font-weight: bold;
 }
 #fondo-sobre-mi{
 	margin: 0;
@@ -57,14 +67,23 @@ body{
 	right: 0;
 	z-index: -1;
 }
-.contenedor-logo h2{
+/*.contenedor-logo h2{
 	color: white;
 	font-family: 'Josefin Sans', 'Sans-serif';
 	font-size: 2rem;
+}*/
+.triangulo{
+	width: 0;
+    height: 0;
+    border-left: 20vh solid transparent;
+    border-right: 20vh solid transparent;
+    border-top: 20vh solid #000;	
 }
 .triangulo > img{
-	width: 200px;
-	border:solid red 4px;
+	position: absolute;
+	top: 6%;
+	left: 45%;
+	width: 25%;
 }
 .center{
 	text-align: center;
@@ -78,4 +97,50 @@ body{
 .texto-blanco{
 	color: white;
 }
+.div-imagen{
+	border:solid white 5px;
+	height: 25vh;
+}
+.margin-cero{
+	margin: 0;
+}
+.foto{
+	width: 100%;
+}
+.foto > img{
+	width: 65%;
+}
+.fila-descripcion{
+	position: relative;
+	top: 10%;
+	/*border:solid red 4px;*/
+}	
+.subtitulo{
+	text-align: justify;
+	line-height: 120%;
+	font-size: 2rem;
+}
+.texto-descripcion{
+	text-align: justify;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	word-spacing: 2%;
+	text-indent: 50px;
 
+}
+.fila-boton{
+	position: relative;
+	top: 20%;
+}
+.fila-boton{
+	width: 50%;
+	height: 40px;
+	border-radius: 10px;
+	background-color: transparent;
+	border:solid #dd1cc7 3px;
+
+}
+.fila-boton  a{
+	color:white;
+	font-size: 2rem;
+}
