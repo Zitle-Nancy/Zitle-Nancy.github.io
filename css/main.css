@@ -39,6 +39,14 @@ body{
 	background-color:#2B3E59;	
 	background-attachment: fixed;
 }
+#masHabilidades{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color:#2B3E59;	
+	background-attachment: fixed;
+}
 .hidden{
 	display: none;
 }
