@@ -3,6 +3,10 @@
   .rating-container .walk-container,
   .rating-container .transit-container,
   .rating-container .bike-container,
+  .rating-container .bootstrap,
+  .rating-container .materializecss,
+  .rating-container .react,
+  .rating-container .jQuery,
   .rating-container .javascript {
     /*aqui*/
     height: 150px; 
@@ -16,6 +20,10 @@
     .rating-container .walk-container a,
     .rating-container .transit-container a,
     .rating-container .bike-container a,
+    .rating-container .bootstrap a,
+    .rating-container .materializecss a,
+    .rating-container .react a,
+    .rating-container .jQuery a,
     .rating-container .javascript a {
       position: absolute;
       width: 150px;
@@ -27,18 +35,12 @@
       text-align: center;
       font-weight: light;
       font-size: 12px; }
-/*      .rating-container .walk-container a:hover,
-      .rating-container .transit-container a:hover,
-      .rating-container .bike-container a:hover,
-      .rating-container .javascript a:hover {
-        text-decoration: none; }*/
   .rating-container svg {
     /*aqui*/
     height: 150px;
     transform: rotate(-90deg);
     width: 150px; }
     .rating-container svg .rating-progress-background {
-      /*fill: none;*/
       fill: #2B3E59;
       stroke: #E9E9E7;
       stroke-width: 2; }
@@ -51,33 +53,28 @@
       stroke-width: 2;
       transition: all 1.2s cubic-bezier(0.99, 0.01, 0.62, 0.94); }
     .rating-container svg .under-50 {
-      stroke: #FF5D00; }
-    .rating-container svg .under-75 {
       stroke: #FFE100; }
+    .rating-container svg .under-75 {
+      stroke: #FF5D00; }
     .rating-container svg .under-80 {
-      stroke: #ebaabe; }
+      stroke: #3D8FC6; }
     .rating-container svg .over-75 {
-      stroke: blue; }
+      /*cambiar color*/
+      stroke: #6181B6; }
   .rating-container #walk-score,
   .rating-container #transit-score,
   .rating-container #bike-score,
+  .rating-container #bootstrap,
+  .rating-container #materializecss,
+  .rating-container #react,
+  .rating-container #jQuery,
   .rating-container #javascript {
     position: absolute;
     width: 150px;
     color: white;
-    bottom: 14px;
-    font-size: 17px;
+    bottom: 20px;
+    font-size: 12px;
     text-align: center; }
-  /*.rating-container .transit-icon .fa,
-  .rating-container .bike-icon .fa,
-  .rating-container .javascript .fa,
-  .rating-container .walk-icon .fa {
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    width: 100px;
-    text-align: center;
-    font-size: 40px; }*/
 .lenguajes{
   position: absolute;
   bottom: 60px;
@@ -92,4 +89,17 @@
   left: 25%;
   width: 50%;
 }
-/*# sourceMappingURL=main.css.map */
+.rating-container svg .color-morado {
+  stroke: #59407F;
+}
+.rating-container svg .color-rosado {
+  stroke: #EB7077;
+}
+.rating-container svg .color-azul-claro {
+  stroke: #61DAFB;
+}
+.rating-container svg .color-azul-fuerte {
+  stroke: #0769AD;
+}
+
+
