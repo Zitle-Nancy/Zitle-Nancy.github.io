@@ -4,8 +4,9 @@
   .rating-container .transit-container,
   .rating-container .bike-container,
   .rating-container .javascript {
-    height: 100px;
-    width: 100px;
+    /*aqui*/
+    height: 150px; 
+    width: 150px;
     display: inline-block;
     position: relative;
     background: #fff;
@@ -17,7 +18,7 @@
     .rating-container .bike-container a,
     .rating-container .javascript a {
       position: absolute;
-      width: 100px;
+      width: 150px;
       color: #727272;
       text-decoration: none;
       border-bottom: none;
@@ -32,11 +33,13 @@
       .rating-container .javascript a:hover {
         text-decoration: underline; }
   .rating-container svg {
-    height: 100px;
+    /*aqui*/
+    height: 150px;
     transform: rotate(-90deg);
-    width: 100px; }
+    width: 150px; }
     .rating-container svg .rating-progress-background {
-      fill: none;
+      /*fill: none;*/
+      fill: #2B3E59;
       stroke: #E9E9E7;
       stroke-width: 2; }
     .rating-container svg .rating-progress {
@@ -60,7 +63,7 @@
   .rating-container #bike-score,
   .rating-container #javascript {
     position: absolute;
-    width: 100px;
+    width: 150px;
     color: black;
     bottom: 14px;
     font-size: 17px;
