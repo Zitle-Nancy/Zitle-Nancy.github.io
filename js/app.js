@@ -1,7 +1,7 @@
 (function() {
 	page('/',index);
 	page('/acerca-de-mi',sobreMi);
-	// page('/habilidades', habilidades);
+	page('/habilidades', habilidades);
 	// page('/proyectos',proyectos);
 	page({
 		hashbang:true
@@ -10,11 +10,17 @@
 	function index() {
 		$('#inicio').removeClass('hidden');
 		$('#fondo-sobre-mi').addClass('hidden');
+		$('#habilidades').addClass('hidden');
 	};
 
 	function sobreMi(){
 		$('#inicio').addClass('hidden');
 		$('#fondo-sobre-mi').removeClass('hidden');
+		$('#habilidades').addClass('hidden');
+	}
+	function habilidades(){
+		$('#habilidades').removeClass('hidden');
+		$('fondo-sobre-mi').addClass('hidden');
 	}
 
 	var cargarPagina = function () {
