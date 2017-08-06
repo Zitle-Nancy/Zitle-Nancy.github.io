@@ -20,11 +20,14 @@
 	}
 	function habilidades(){
 		$('#habilidades').removeClass('hidden');
-		$('fondo-sobre-mi').addClass('hidden');
+		$('#fondo-sobre-mi').addClass('hidden');
+		$('#habilidades-graficas').load('habilidades.html #seccion-habilidades', function() {
+			setTimeout(leerPagina, 1000);
+		});
 	}
 
 	var cargarPagina = function () {
-		// body...
+
 	}
 	var splash = function () {
 		var splashScreen = document.querySelector('.splash');
@@ -34,6 +37,6 @@
 		home.classList.remove('hidden');
 	}
 
-	setTimeout(splash, 1);
+	// setTimeout(splash, 1);
 	$(document).ready(cargarPagina);
 })();
