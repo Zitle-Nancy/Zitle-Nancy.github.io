@@ -3,7 +3,9 @@
 	page('/acerca-de-mi',sobreMi);
 	page('/habilidades', habilidades);
 	page('/mas-habilidades', masHabilidades);
-	// page('/proyectos',proyectos);
+	page('/proyecto-dos',proyectoDos);
+	page('/proyecto-tres',proyectoTres);
+	page('/proyectos',proyectos);
 	page({
 		hashbang:true
 	});
@@ -13,6 +15,9 @@
 		$('#fondo-sobre-mi').addClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#masHabilidades').addClass('hidden');
+		$('#proyectos').addClass('hidden');
+		$('#proyecto-dos').addClass('hidden');
+		$('#proyecto-tres').addClass('hidden');
 	};
 
 	function sobreMi(){
@@ -20,11 +25,17 @@
 		$('#fondo-sobre-mi').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#masHabilidades').addClass('hidden');
+		$('#proyectos').addClass('hidden');
+		$('#proyecto-dos').addClass('hidden');
+		$('#proyectoTres').addClass('hidden');
 	}
 	function habilidades(){
 		$('#habilidades').removeClass('hidden');
 		$('#fondo-sobre-mi').addClass('hidden');
 		$('#masHabilidades').addClass('hidden');
+		$('#proyecto-dos').addClass('hidden');
+		$('#proyecto-tres').addClass('hidden');
+		$('#proyectos').addClass('hidden');
 		$('#habilidades-graficas').load('habilidades.html #seccion-habilidades', function() {
 			setTimeout(function () {
 				var habilidades = [
@@ -69,6 +80,8 @@
 	function masHabilidades(){
 		$('#masHabilidades').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
+		$('#proyecto-dos').addClass('hidden');
+		$('#proyecto-tres').addClass('hidden');
 		$('#habilidades-graficas-dos').load('habilidades.html #seccion-habilidades-dos', function() {
 			setTimeout(function(){
 				var masHabilidades=[
@@ -98,9 +111,34 @@
 		});
 
 	}
-	var cargarPagina = function () {
-		// $('#mas').click(masHabilidades);
+	function proyectos(){
+		$('#proyectos').removeClass('hidden');
+		$('#habilidades').addClass('hidden');
+		$('#proyecto-dos').addClass('hidden');
+		$('#proyecto-tres').addClass('hidden');
 	}
+	function proyectoDos(){
+		$('#proyecto-dos').removeClass('hidden');
+		$('#proyectos').addClass('hidden');
+		$('#habilidades').addClass('hidden');
+		$('#index').addClass('hidden');
+		$('#proyecto-tres').addClass('hidden');
+	}
+	function proyectoTres(){
+		$('#proyecto-tres').removeClass('hidden');
+		$('#proyecto-dos').addClass('hidden');
+		$('#proyectos').addClass('hidden');
+		$('#habilidades').addClass('hidden');
+		$('#index').addClass('hidden');
+	}
+	var cargarPagina = function () {
+		$('#siguiente').click(proyectoDos);
+		$('#siguiente-tres').click(proyectoTres);
+		$('#regresar-uno').click(proyectos);
+		$('#regresar-dos').click(proyectoDos);
+		
+	}
+
 	var splash = function () {
 		var splashScreen = document.querySelector('.splash');
 		var splashScreen = document.querySelector('.splash');
