@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lora|Montserrat|Volkhov|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito|family=Merriweather|family=Droid+Serif|Josefin+Sans');
 body{
 	margin: 0;
 	padding: 0;
@@ -113,7 +113,6 @@ body{
 .fila-descripcion{
 	position: relative;
 	top: 10%;
-	/*border:solid red 4px;*/
 }	
 .subtitulo{
 	text-align: justify;
@@ -193,4 +192,12 @@ a.ver-mas > img{
 a.link{
 	text-decoration: none;
 	text-decoration-line: none;
+}
+.titulo-habilidades{
+	font-family: 'Merriweather', serif;
+	font-size: 3rem; 
+}
+.fuente-parrafos{
+	font-family: 'Nunito', serif;
+	font-size: 2rem; 
 }
