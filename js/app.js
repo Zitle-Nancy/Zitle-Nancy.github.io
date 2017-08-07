@@ -147,15 +147,6 @@
 		$('#habilidades').addClass('hidden');
 		$('#index').addClass('hidden');
 	}
-	var cargarPagina = function () {
-		$('#siguiente').click(proyectoDos);
-		$('#siguiente-tres').click(proyectoTres);
-		$('#regresar-uno').click(proyectos);
-		$('#regresar-dos').click(proyectoDos);
-		$('#regresar-tres').click(proyectoTres);
-		$('#siguiente-cuatro').click(proyectoCuatro);
-		
-	}
 
 	var splash = function () {
 		var splashScreen = document.querySelector('.splash');
@@ -166,5 +157,4 @@
 	}
 
 	// setTimeout(splash, 1);
-	$(document).ready(cargarPagina);
 })();
