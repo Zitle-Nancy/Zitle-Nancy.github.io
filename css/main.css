@@ -143,3 +143,15 @@ body{
 .fila1{
 	border:solid red 3px;
 }
+a.ver-mas{
+	width: 50px;
+	height: 50px;
+	border:solid grey 1px;
+	border-radius: 50%;
+	background: grey;
+	display: inline-block;
+}
+a.ver-mas > img{
+	width: 100%;
+	border-radius: 50%;
+}

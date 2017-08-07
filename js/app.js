@@ -2,7 +2,7 @@
 	page('/',index);
 	page('/acerca-de-mi',sobreMi);
 	page('/habilidades', habilidades);
-	page('masHabilidades', masHabilidades);
+	page('/mas-habilidades', masHabilidades);
 	// page('/proyectos',proyectos);
 	page({
 		hashbang:true
@@ -26,7 +26,43 @@
 		$('#fondo-sobre-mi').addClass('hidden');
 		$('#masHabilidades').addClass('hidden');
 		$('#habilidades-graficas').load('habilidades.html #seccion-habilidades', function() {
-			setTimeout(leerPagina, 1000);
+			setTimeout(function () {
+				var habilidades = [
+					{
+						nombre: "html",
+						nivel: 1
+					},
+					{
+						nombre: "css",
+						nivel: 1
+					},
+					{
+						nombre: "javascript",
+						nivel: 1
+					},
+					{
+						nombre: "php",
+						nivel: 0
+					},
+					{
+						nombre: "bootstrap",
+						nivel: 1
+					},
+					{
+						nombre: "materializecss",
+						nivel: 1
+					},
+					{
+						nombre: "jQuery",
+						nivel: 1
+					},
+					{
+						nombre: "react",
+						nivel: 0
+					}
+				];
+				leerPagina(habilidades);
+			}, 1000);
 		});
 	}
 
@@ -34,11 +70,36 @@
 		$('#masHabilidades').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#habilidades-graficas-dos').load('habilidades.html #seccion-habilidades-dos', function() {
-			setTimeout(leerPagina, 1000);
+			setTimeout(function(){
+				var masHabilidades=[
+					{
+						nombre: 'git',
+						nivel: 1
+					},
+					{
+						nombre: 'mysql',
+						nivel: 0
+					},
+					{
+						nombre: 'sass',
+						nivel: 0
+					},
+					{
+						nombre: 'gulp',
+						nivel: 0
+					},
+					{
+						nombre: 'agile',
+						nivel: 1
+					}
+				];
+				leerPagina(masHabilidades);
+			}, 1000);
 		});
+
 	}
 	var cargarPagina = function () {
-		$('#mas').click(masHabilidades);
+		// $('#mas').click(masHabilidades);
 	}
 	var splash = function () {
 		var splashScreen = document.querySelector('.splash');
