@@ -6,6 +6,7 @@
 	page('/proyecto-dos',proyectoDos);
 	page('/proyecto-tres',proyectoTres);
 	page('/proyectos',proyectos);
+	page('/proyecto-cuatro',proyectoCuatro);
 	page({
 		hashbang:true
 	});
@@ -18,6 +19,7 @@
 		$('#proyectos').addClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
+		$('#proyecto-cuatro').addClass('hidden');
 	};
 
 	function sobreMi(){
@@ -28,6 +30,7 @@
 		$('#proyectos').addClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyectoTres').addClass('hidden');
+		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function habilidades(){
 		$('#habilidades').removeClass('hidden');
@@ -36,6 +39,7 @@
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
 		$('#proyectos').addClass('hidden');
+		$('#proyecto-cuatro').addClass('hidden');
 		$('#habilidades-graficas').load('habilidades.html #seccion-habilidades', function() {
 			setTimeout(function () {
 				var habilidades = [
@@ -82,6 +86,7 @@
 		$('#habilidades').addClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
+		$('#proyecto-cuatro').addClass('hidden');
 		$('#habilidades-graficas-dos').load('habilidades.html #seccion-habilidades-dos', function() {
 			setTimeout(function(){
 				var masHabilidades=[
@@ -116,6 +121,7 @@
 		$('#habilidades').addClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
+		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function proyectoDos(){
 		$('#proyecto-dos').removeClass('hidden');
@@ -123,10 +129,20 @@
 		$('#habilidades').addClass('hidden');
 		$('#index').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
+		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function proyectoTres(){
 		$('#proyecto-tres').removeClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
+		$('#proyectos').addClass('hidden');
+		$('#habilidades').addClass('hidden');
+		$('#index').addClass('hidden');
+		$('#proyecto-cuatro').addClass('hidden');
+	}
+	function proyectoCuatro(){
+		$('#proyecto-cuatro').removeClass('hidden');
+		$('#proyecto-dos').addClass('hidden');
+		$('#proyecto-tres').addClass('hidden');
 		$('#proyectos').addClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#index').addClass('hidden');
@@ -136,6 +152,8 @@
 		$('#siguiente-tres').click(proyectoTres);
 		$('#regresar-uno').click(proyectos);
 		$('#regresar-dos').click(proyectoDos);
+		$('#regresar-tres').click(proyectoTres);
+		$('#siguiente-cuatro').click(proyectoCuatro);
 		
 	}
 
