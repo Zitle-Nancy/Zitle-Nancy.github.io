@@ -154,7 +154,8 @@
 		var home = document.querySelector('.contenedor');
 		splashScreen.style.display = 'none';
 		home.classList.remove('hidden');
+
 	}
 
-	// setTimeout(splash, 1);
+	setTimeout(splash, 1500);
 })();
