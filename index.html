@@ -4,49 +4,292 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nancy Zitle</title>
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
 	<link rel="stylesheet" type="text/css" href="css/icons.css" />
-	<link rel="stylesheet" type="text/css" href="css/style5.css" />
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/habilidades.css">
 </head>
 <body>
-	<div class="container">
-			<header class="codrops-header">
-				<h1>Animated Border Menus <span>Inspired by CreativeDash's <a href="http://creativeda.sh/sandbox/bounce_menu/">bounce menu</a></h1>
-				<p class="codrops-links"><a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/CreativeLoadingEffects/"><span>Previous Demo</span></a>
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16556"><span>Back to the Codrops Article</span></a></span></p>
-				<nav class="codrops-demos">
-					<a href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
-					<a href="index4.html">Demo 4</a>
-					<a class="current-demo" href="index5.html">Demo 5</a>
-					<a href="index6.html">Demo 6</a>
-				</nav>
-				<div class="codrops-related">
-					If you enjoyed this menu, you might also like:<br />
-					<a href="http://tympanus.net/Development/MultiLevelPushMenu/">Multi-Level Push Menu</a><br/>
-					<a href="http://tympanus.net/Development/SidebarTransitions/">Transitions for Off-canvas Navigations</a>
+	<div class="contenedor-logo splash hidden">
+		<img src="../assets/img/logo-splash.png" alt="Splash - Nancy Zitle">
+		<div>
+			<h2>
+				Desarrolladora Front End | Ingeniera en Computación
+			</h2>
+		</div>
+	</div>
+	<div class="contenedor">
+		<nav id="bt-menu" class="bt-menu">
+			<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+			<ul id="dummy">
+				<li><a href="./">Inicio</a></li>
+				<li><a href="./acerca-de-mi">Sobre mí</a></li>
+				<li><a href="/habilidades">Habilidades</a></li>
+				<li><a href="/proyectos">Proyectos</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://goo.gl/rSXccU" class="bt-icon icon-github">icon-github</a></li>
+				<li><a href="https://goo.gl/2jGyz5" class="bt-icon icon-twitter">Twitter</a></li>
+				<li><a href="https://goo.gl/Dncngp" class="bt-icon icon-gplus">Google+</a></li>
+				<li><a href="https://goo.gl/V8jAGc" class="bt-icon icon-facebook">Facebook</a></li>
+			</ul>
+		</nav>
+		<!-- pagina inicial -->
+			<section id="inicio" class="contenedor-logo hidden">
+				<img src="./assets/img/logo.png" alt="Nancy Zitle Juarez">
+				<div>
+					<h2 id="texto-principal">
+						Desarrolladora Front End | Ingeniera en Computación
+					</h2>
 				</div>
-			</header>
-			<nav id="bt-menu" class="bt-menu">
-				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-				<ul>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Clients</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				<ul>
-					<li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
-					<li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus">Google+</a></li>
-					<li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
-					<li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
-				</ul>
-			</nav>
-		</div><!-- /container -->
-	
+			</section>
+		<!-- fin de pagina inicial -->
+		<!-- seccion sobre mi -->
+			<section id="fondo-sobre-mi" class="formato-contenedor hidden container center">
+				<div class="row margin-cero">
+						<div class="col-md-2 col-md-offset-5">
+							<div class="texto-blanco">
+								<img src="./assets/img/logoR.png">
+							</div>
+						</div>
+				</div>
+				<div class="row fila-descripcion margin-cero">
+					<div class="col-xs-12 col-md-4 col-md-offset-1">
+						<div class="foto">
+							<img src="./assets/img/foto.jpg" alt="Nancy Zitle">
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<p class="texto-blanco subtitulo">Hola!</p>
+						<p class="texto-blanco texto-descripcion">
+							Mi nombre es Nancy Zitle Juárez, soy una persona apasionada por aprender y enseñar. Me encanta el mundo de la tecnología por los retos que presenta, como la constante actualización. <br>
+							Hoy en día cuento con experiencia en el desarrollo de aplicaciones web funcionales, diseño web responsive, manejo de librerías y frameworks. <br>
+							En mis tiempos libres, me gusta leer, aprender matemáticas, y  observar la naturaleza escuchando música.
+						</p>
+						<button class="fila-boton">
+							<a href="./assets/cv/Nancy_Zitle.pdf" download="cv_Nancy_Zitle">
+									CV
+							</a>
+						</button>
+					</div>
+				</div>
+			</section>
+		<!-- fin sobre mi -->
+		<!-- seccion habilidades -->
+			<section id="habilidades" class="formato-contenedor hidden container center">
+				<div class="row margin-cero">
+						<div class="col-md-2 col-md-offset-5">
+							<div class="texto-blanco">
+								<img src="./assets/img/logoR.png">
+							</div>
+						</div>
+				</div>
+				<div class="row margin-cero container-fluid center texto-blanco">
+					<div class="col-md-offset-4 col-md-4">
+						<h1 class="titulo-habilidades">Tecnologías web</h1>
+					</div>
+				</div>
+				<div id="habilidades-graficas">
+					
+				</div>
+				<div class="col-md-12 center">
+					<a class="ver-mas" href="/mas-habilidades">
+						<img src="./assets/img/mas.png">
+					</a>
+				</div>
+			</section>
+		<!-- fin de habilidades -->
+		<!-- mas habilidades -->
+			<section id="masHabilidades" class="formato-contenedor hidden container center">
+				<div class="row margin-cero">
+						<div class="col-md-2 col-md-offset-5">
+							<div class="texto-blanco">
+								<img src="./assets/img/logoR.png">
+							</div>
+						</div>
+				</div>
+				<div class="row margin-cero container-fluid center texto-blanco">
+					<div class="col-md-offset-2 col-md-8">
+						<h1 class="titulo-habilidades">Sistema de control de Versiones</h1>
+					</div>
+				</div>
+				<div id="habilidades-graficas-dos">
+					
+				</div>
+			</section>
+		<!-- fin de mas habilidades -->
+		<!-- seccion de proyectos -->
+			<section id="proyectos" class="formato-contenedor hidden container center formato-proyectos">
+				<div class="row margin-cero">
+					<div class="col-md-2 col-md-offset-5">
+						<div class="texto-blanco">
+						<img src="./assets/img/logoR.png">
+						</div>
+					</div>
+				</div>
+				<div class="row margin-cero margin-top">
+					<div class="col-md-offset-1 col-md-5 animatedParent">
+						<div class="thumbnail animated bounceIn">
+						   	<img src="assets/img/a.jpg" alt="Proyectos">
+						</div>
+					</div>
+					<div class="col-md-5 animatedParent">
+						<div class="thumbnail tarjetas-texto animated bounceIn">
+							<h3 class="titulo-habilidades"><strong>Lyft</strong></h3>
+							<p class="fuente-parrafos">
+								Replica de <a href="https://www.lyft.com/">lyft</a>, version móvil utilizando javaScript,Apis, CSS3 y HTML5.
+							</p>
+							<p>
+								<a href="https://goo.gl/DfVHpP" class="link">
+									<i class="devicon-github-plain-wordmark colored iconos"></i>
+								</a>
+								<a href="https://goo.gl/oqa6SL" class="link">
+									<i class="devicon-chrome-plain-wordmark colored iconos"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<a id="siguiente" href="/proyecto-dos">
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</a>
+				</div>
+			</section>
+			
+			<section id="proyecto-dos" class="formato-contenedor hidden container center formato-proyectos">
+				<div class="row margin-cero">
+					<div class="col-md-2 col-md-offset-5">
+						<div class=" texto-blanco">
+						<img src="./assets/img/logoR.png">
+						</div>
+					</div>
+				</div>
+				<div class="row margin-cero margin-top">
+					<div class="col-md-offset-1 col-md-5 animatedParent">
+						<div class="thumbnail tarjetas-texto animated shake">
+							<h3 class="titulo-habilidades"><strong>appComida</strong></h3>
+							    	<p class="fuente-parrafos">
+							    		Aplicacion de ubicaciones sobre algunos restaurantes. Realizado con jQuery, CSS3, HTML5 y Apis.
+							    	</p>
+							    	<p>
+							    	<a href="https://goo.gl/ohL9v3" class="link">
+							    		<i class="devicon-github-plain-wordmark colored iconos"></i>
+							    	</a>
+							    		<a href="https://goo.gl/dY7eK4" class="link">
+							    		<i class="devicon-chrome-plain-wordmark colored iconos"></i>
+							    		</a>
+							    	</p>
+						</div>
+					</div>
+					<div class="col-md-5 animatedParent">
+						<div class="thumbnail animated shake">
+						   	<img src="assets/img/b.jpg" alt="Proyectos">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<a id="regresar-uno" class="float" href="/proyectos">
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+					</a>
+					<a id="siguiente-tres" href="/proyecto-tres">
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</a>
+				</div>
+			</section>
+			
+			<section id="proyecto-tres" class="formato-contenedor hidden container center formato-proyectos">
+				<div class="row margin-cero">
+					<div class="col-md-2 col-md-offset-5">
+						<div class="texto-blanco">
+						<img src="./assets/img/logoR.png">
+						</div>
+					</div>
+				</div>
+				<div class="row margin-cero margin-top">
+					<div class="col-md-offset-1 col-md-5 animatedParent">
+						<div class="thumbnail animated shake">
+						   	<img src="assets/img/c.jpg" alt="Proyectos">
+						</div>
+					</div>
+					<div class="col-md-5 animatedParent">
+						<div class="thumbnail tarjetas-texto animated shake">
+							<h3 class="titulo-habilidades"><strong>AppLover</strong></h3>
+					    	<p class="fuente-parrafos">
+					    		Plataforma de descripcion sobre productos. Utilizando javaScript, CSS3 y HTML5.
+					    	</p>
+					    	<p>
+					    	<a href="https://goo.gl/HwJfh9" class="link">
+					    		<i class="devicon-github-plain-wordmark colored iconos"></i>
+					    	</a>
+					    		<a href="https://goo.gl/gQV6a9" class="link">
+					    		<i class="devicon-chrome-plain-wordmark colored iconos"></i>
+					    		</a>
+					    	</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<a id="regresar-dos" class="float" href="/proyecto-dos">
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+					</a>
+					<a id="siguiente-cuatro" href="proyecto-cuatro">
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</a>
+				</div>
+			</section>
+
+			<section id="proyecto-cuatro" class="formato-contenedor hidden container center formato-proyectos">
+				<div class="row margin-cero">
+					<div class="col-md-2 col-md-offset-5">
+						<div class="texto-blanco">
+						<img src="./assets/img/logoR.png">
+						</div>
+					</div>
+				</div>
+				<div class="row margin-cero margin-top">
+					<div class="col-md-offset-1 col-md-5 animatedParent">
+						<div class="thumbnail animated bounceIn">
+						   	<img src="assets/img/d.jpg" alt="Proyectos">
+						</div>
+					</div>
+					<div class="col-md-5 animatedParent">
+						<div class="thumbnail tarjetas-texto animated bounceIn">
+							<h3 class="titulo-habilidades"><strong>LabCar</strong></h3>
+					    	<p class="fuente-parrafos">
+					    		Proyecto de Laboratoria. Realizado con javaScript, CSS3 y HTML5.
+					    	</p>	
+					    	<p>
+					    	<a href="https://goo.gl/r85zbo" class="link">
+					    		<i class="devicon-github-plain-wordmark colored iconos"></i>
+					    	</a>
+					    		<a href="https://goo.gl/ZqcB3x" class="link">
+					    		<i class="devicon-chrome-plain-wordmark colored iconos"></i>
+					    		</a>
+					    	</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<a id="regresar-tres" class="float" href="/proyecto-tres">
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+					</a>
+				</div>
+			</section>
+		<!-- fin de priyectos -->
+
+	</div><!-- /container -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src='js/css3-animate-it.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/classie.js"></script>
+	<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 	<script src="js/borderMenu.js"></script>
+	<script src="js/habilidades.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

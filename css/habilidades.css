@@ -1,0 +1,104 @@
+.rating-container {
+  position: relative; }
+  .rating-container .skill {
+    /*aqui*/
+    height: 150px; 
+    width: 150px;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    margin: 0 5px; }
+    .rating-container .skill a {
+      position: absolute;
+      width: 150px;
+      color: white;
+      text-decoration: none;
+      border-bottom: none;
+      bottom: 35px;
+      right: 0;
+      text-align: center;
+      font-weight: light;
+      font-size: 12px; }
+  .rating-container svg {
+    /*aqui*/
+    height: 150px;
+    transform: rotate(-90deg);
+    width: 150px; }
+    .rating-container svg .rating-progress-background {
+      fill: #2B3E59;
+      stroke: #E9E9E7;
+      stroke-width: 2; }
+    .rating-container svg .rating-progress {
+      fill: none;
+      /*stroke: #FF5D00;*/
+      stroke: none;
+      stroke-dasharray: 100 100;
+      stroke-dashoffset: 100;
+      stroke-linecap: square;
+      stroke-width: 2;
+      transition: all 1.2s cubic-bezier(0.99, 0.01, 0.62, 0.94); }
+  .rating-container .skill-level {
+    position: absolute;
+    width: 150px;
+    color: white;
+    bottom: 20px;
+    font-size: 12px;
+    text-align: center; }
+.lenguajes{
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  left: 15%;
+  width: 100px;
+  text-align: center;
+  font-size: 50px; 
+}
+.bottom-chico{
+  bottom: 50px;
+  left: 25%;
+  width: 50%;
+}
+.rating-container svg .color-morado {
+  stroke: #59407F;
+}
+.rating-container svg .color-rosado {
+  stroke: #EB7077;
+}
+.rating-container svg .color-azul-claro {
+  stroke: #61DAFB;
+}
+.rating-container svg .color-azul-fuerte {
+  stroke: #0769AD;
+}
+.rating-container svg .color-naranja {
+  stroke: #F34F29;
+}
+.rating-container svg .color-html {
+  stroke: #3D8FC6; 
+}
+.rating-container svg .color-css {
+  stroke: #FF5D00; 
+}
+.rating-container svg .color-amarillo {
+  stroke: #FFE100;
+}
+.rating-container svg .color-php {
+  stroke: #6181B6; 
+}
+.rating-container svg .color-mysql {
+  stroke: gray; 
+}
+.rating-container svg .color-sass {
+  stroke: #AC5E8C; 
+}
+.rating-container svg .color-gulp {
+  stroke: #EB4A4B; 
+}
+.rating-container svg .color-negro {
+  stroke:black; 
+}
+
+
+
