@@ -58,6 +58,9 @@ body{
 .hidden{
 	display: none;
 }
+.logo-nancy{
+	margin-top: 10%;
+}
 .contenedor-logo{
 	position: absolute;
 	top: 0;
@@ -124,9 +127,10 @@ body{
 .texto-descripcion{
 	text-align: justify;
 	line-height: 1.5em;
-	font-size: 2em;
+	font-size: 2.5rem;
 	word-spacing: 2%;
 	font-family: 'Josefin Sans', serif;
+	margin-right: 8%;
 }
 
 .fila-boton{
@@ -192,6 +196,18 @@ a.ver-mas > img{
 a.link{
 	text-decoration: none;
 	text-decoration-line: none;
+}
+.link-descripcion:hover{
+	color:#F9A91A;
+}
+.link-uaem:hover{
+	color:#74e874;
+}
+.color-verde{
+	color:#74e874;
+}
+.color-amarillo{
+	color:#F9A91A;
 }
 .titulo-habilidades{
 	font-family: 'Merriweather', serif;
