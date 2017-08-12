@@ -138,9 +138,9 @@ body{
 	height: 40px;
 	border-radius: 10px;
 	background-color: transparent;
-	border:solid #ebaaab 3px;
+	border: solid #ebaaab 3px;
 }
-.fila-boton  a{
+a .fila-boton{
 	color:white;
 	font-size: 2rem;
 	font-family: 'Josefin Sans';
@@ -150,7 +150,7 @@ body{
 	background-color: rgba(235, 170, 171,.8);
 	border: solid 1px white;
 } 
-.fila-boton:hover a{
+a .fila-boton:hover{
 	color: #271f36;
 	font-weight: bold;
 }
