@@ -23,6 +23,10 @@
 	};
 
 	function sobreMi(){
+		// esta linea te dara el color de la seccion
+		var colorSobreMi = $('#fondo-sobre-mi').css('background-color');
+		$('body').css('background',colorSobreMi);
+		console.log(colorSobreMi);
 		$('#inicio').addClass('hidden');
 		$('#fondo-sobre-mi').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
