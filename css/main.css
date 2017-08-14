@@ -4,14 +4,27 @@ body{
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	/*background-color: rgba(39,31,54,.8);*/
+}
+.fila2{
+	border: solid blue 3px;
+}
+.fila3{
+	border: solid yellow 3px;
+}
+.fila4{
+	border: solid white 3px;
+}
+.fila5{
+	border: solid green 3px;
+}
+#inicio{
 	background: 
 	linear-gradient(
 		rgba(39,31,54,.9),
 		rgba(73,76,82,.8)
 		),
 	url('../assets/img/imagen1.jpg');
-	/*background-color: rgba(39,31,54,.8);*/
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -57,6 +70,9 @@ body{
 }
 .hidden{
 	display: none;
+}
+.logo-nancy{
+	margin-top: 10%;
 }
 .contenedor-logo{
 	position: absolute;
@@ -105,8 +121,7 @@ body{
 	width: 100%;
 }
 .foto > img{
-	width: 50%;
-	height: 20%;
+	width: 43%;
 	/*border-radius: 50%;*/
 	border:solid white 5px;
 }
@@ -124,9 +139,10 @@ body{
 .texto-descripcion{
 	text-align: justify;
 	line-height: 1.5em;
-	font-size: 2em;
+	font-size: 2.2rem;
 	word-spacing: 2%;
 	font-family: 'Josefin Sans', serif;
+	margin-right: 8%;
 }
 
 .fila-boton{
@@ -134,9 +150,10 @@ body{
 	height: 40px;
 	border-radius: 10px;
 	background-color: transparent;
-	border:solid #ebaaab 3px;
+	border: solid #ebaaab 3px;
+	margin-bottom: 50px;
 }
-.fila-boton  a{
+a .fila-boton{
 	color:white;
 	font-size: 2rem;
 	font-family: 'Josefin Sans';
@@ -146,12 +163,15 @@ body{
 	background-color: rgba(235, 170, 171,.8);
 	border: solid 1px white;
 } 
-.fila-boton:hover a{
+a .fila-boton:hover{
 	color: #271f36;
 	font-weight: bold;
 }
 .fila1{
 	border:solid red 3px;
+}
+.img-center{
+	margin: 0 0 0 auto;
 }
 a.ver-mas{
 	width: 50px;
@@ -160,6 +180,10 @@ a.ver-mas{
 	border-radius: 50%;
 	background: grey;
 	display: inline-block;
+	border:solid pink 3px;
+}
+.boton-mas{
+	margin-bottom: 55px;
 }
 a.ver-mas > img{
 	width: 100%;
@@ -174,12 +198,14 @@ a.ver-mas > img{
 	float: right;
 	color: white;
 	cursor: pointer;
+	margin-bottom: 50px;
 }
 .float{
 	float: left;
 }
 .iconos{
 	font-size: 6rem;
+	margin-bottom: 50px;
 }
 .tarjetas-texto{
 	height: 64vh;
@@ -193,6 +219,18 @@ a.link{
 	text-decoration: none;
 	text-decoration-line: none;
 }
+.link-descripcion:hover{
+	color:#F9A91A;
+}
+.link-uaem:hover{
+	color:#74e874;
+}
+.color-verde{
+	color:#74e874;
+}
+.color-amarillo{
+	color:#F9A91A;
+}
 .titulo-habilidades{
 	font-family: 'Merriweather', serif;
 	font-size: 3rem; 
@@ -200,4 +238,59 @@ a.link{
 .fuente-parrafos{
 	font-family: 'Nunito', serif;
 	font-size: 2rem; 
+}
+/*medias queries*/
+/**/
+@media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape){
+	.foto > img{
+		width: 80%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .texto-descripcion{
+    	font-size: 1.9rem;
+    	margin-left: 10%;
+    }
+    .foto > img{
+		width: 30%;
+	}
+	.img-center{
+		margin: 0 auto 0 auto;
+	}
+	.subtitulo{
+		font-size: 2rem;
+		margin-left: 10%;
+	}
+	.logo-nancy{
+		margin-top: 2%;
+	}
+	.fila-descripcion{
+		top: 2%;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+    .texto-descripcion{
+    	font-size: 1.5rem;
+    	margin-left: 10%;
+    }
+    .subtitulo{
+		font-size: 2rem;
+		margin-left: 10%;
+	}
+	.img-center{
+		margin: 0 auto 0 0;
+	}
+
+}
+
+@media screen and (max-width:320px){
+	.texto-descripcion{
+    	font-size: 1.7rem;
+    	margin-right: 0;
+	}
+	#texto-principal{
+		font-size: 13px;
+	}
 }

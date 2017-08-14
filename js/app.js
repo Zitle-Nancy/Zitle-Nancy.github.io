@@ -10,8 +10,9 @@
 	page({
 		hashbang:true
 	});
-
 	function index() {
+		$('nav').addClass('bt-menu-close');
+		$('nav').removeClass('bt-menu-open');
 		$('#inicio').removeClass('hidden');
 		$('#fondo-sobre-mi').addClass('hidden');
 		$('#habilidades').addClass('hidden');
@@ -23,6 +24,12 @@
 	};
 
 	function sobreMi(){
+		// esta linea te dara el color de la seccion
+		var colorSobreMi = $('#fondo-sobre-mi').css('background-color');
+		$('body').css('background',colorSobreMi);
+		// console.log(colorSobreMi);
+		$('nav').addClass('bt-menu-close');
+		$('nav').removeClass('bt-menu-open');
 		$('#inicio').addClass('hidden');
 		$('#fondo-sobre-mi').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
@@ -33,6 +40,10 @@
 		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function habilidades(){
+		$('nav').addClass('bt-menu-close');
+		$('nav').removeClass('bt-menu-open');
+		var colorHabilidades = $('#habilidades').css('background-color');
+		$('body').css('background',colorHabilidades);
 		$('#habilidades').removeClass('hidden');
 		$('#fondo-sobre-mi').addClass('hidden');
 		$('#masHabilidades').addClass('hidden');
@@ -77,11 +88,13 @@
 					}
 				];
 				leerPagina(habilidades);
-			}, 1000);
+			}, 200);
 		});
 	}
 
 	function masHabilidades(){
+		var colorMasHabilidades = $('#masHabilidades').css('background-color');
+		$('body').css('background',colorMasHabilidades);
 		$('#masHabilidades').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
@@ -112,11 +125,23 @@
 					}
 				];
 				leerPagina(masHabilidades);
-			}, 1000);
+			}, 200);
 		});
 
 	}
+	// var presionLetra = $('body').keyDown(mostrarCodigo);
+
+	// function mostrarCodigo(e) {
+	// 	console.log(e.keyCode);
+		
+	// }
+
 	function proyectos(){
+		$('nav').addClass('bt-menu-close');
+		$('nav').removeClass('bt-menu-open');
+		// mostrarCodigo();
+		var colorProyectos = $('.formato-proyectos').css('background-color');
+		$('body').css('background', colorProyectos);
 		$('#proyectos').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
@@ -124,6 +149,8 @@
 		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function proyectoDos(){
+		var colorProyectos = $('.formato-proyectos').css('background-color');
+		$('body').css('background', colorProyectos);
 		$('#proyecto-dos').removeClass('hidden');
 		$('#proyectos').addClass('hidden');
 		$('#habilidades').addClass('hidden');
@@ -132,6 +159,8 @@
 		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function proyectoTres(){
+		var colorProyectos = $('.formato-proyectos').css('background-color');
+		$('body').css('background', colorProyectos);
 		$('#proyecto-tres').removeClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyectos').addClass('hidden');
@@ -140,6 +169,8 @@
 		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function proyectoCuatro(){
+		var colorProyectos = $('.formato-proyectos').css('background-color');
+		$('body').css('background', colorProyectos);
 		$('#proyecto-cuatro').removeClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
