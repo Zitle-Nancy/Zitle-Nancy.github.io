@@ -6,6 +6,18 @@ body{
 	height: 100%;
 	/*background-color: rgba(39,31,54,.8);*/
 }
+.fila2{
+	border: solid blue 3px;
+}
+.fila3{
+	border: solid yellow 3px;
+}
+.fila4{
+	border: solid white 3px;
+}
+.fila5{
+	border: solid green 3px;
+}
 #inicio{
 	background: 
 	linear-gradient(
@@ -167,6 +179,10 @@ a.ver-mas{
 	border-radius: 50%;
 	background: grey;
 	display: inline-block;
+	border:solid pink 3px;
+}
+.boton-mas{
+	margin-bottom: 55px;
 }
 a.ver-mas > img{
 	width: 100%;
@@ -263,52 +279,12 @@ a.link{
 	.img-center{
 		margin: 0 auto 0 0;
 	}
-	/*.foto{
-		
-	}*/
-	/*.logo-nancy{
-		margin-top: 2%;
-	}
-	.fila-descripcion{
-		top: 2%;
-	}*/
-	/*#fondo-sobre-mi{
-		background: #271f36;
-	}*/
 
 }
-/*@media screen and (min-width: 320px) and (max-width: 479px) {
-    .texto-descripcion{
-    	font-size: 1.3rem;
-    }
-    .foto > img{
-		width: 25%;
-	}
-	.img-center{
-		margin: 0 auto 0 auto;
-	}
-	.subtitulo{
-		font-size: 2rem;
-	}
-}
-@media screen and (min-width:319px){
+
+@media screen and (max-width:320px){
 	.texto-descripcion{
     	font-size: 1.7rem;
     	margin-right: 0;
-    }
-    /*.foto{
-		display: none;
 	}
-	.img-center{
-		margin: 0 auto 0 auto;
-	}
-	.subtitulo{
-		font-size: 2rem;
-	}
-	.logo-nancy{
-		margin-top: 4%;
-	}
-	.fila-descripcion{
-		top: 4%;
-	}
-*/
+}

@@ -26,7 +26,7 @@
 		// esta linea te dara el color de la seccion
 		var colorSobreMi = $('#fondo-sobre-mi').css('background-color');
 		$('body').css('background',colorSobreMi);
-		console.log(colorSobreMi);
+		// console.log(colorSobreMi);
 		$('#inicio').addClass('hidden');
 		$('#fondo-sobre-mi').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
@@ -37,6 +37,8 @@
 		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function habilidades(){
+		var colorHabilidades = $('#habilidades').css('background-color');
+		$('body').css('background',colorHabilidades);
 		$('#habilidades').removeClass('hidden');
 		$('#fondo-sobre-mi').addClass('hidden');
 		$('#masHabilidades').addClass('hidden');
