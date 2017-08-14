@@ -11,7 +11,7 @@
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
     margin: 0 5px; 
   }
-  .rating-container .skill a {
+  .rating-container .skill span {
       position: absolute;
       width: 150px;
       color: white;
@@ -108,7 +108,7 @@
     height: 100px; 
     width: 100px;
   }
-  .rating-container .skill a {
+  .rating-container .skill span {
     width: 100px;
     font-size: 11px;
   }
@@ -116,6 +116,11 @@
     bottom: 35px;
     width: 60px;
     left: 18%;
+  }
+  #agileImagen{
+    bottom: 50px;
+    width: 35px;
+    left: 35%;
   }
   .lenguajes{
   position: absolute;
