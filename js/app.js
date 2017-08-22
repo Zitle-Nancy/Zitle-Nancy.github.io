@@ -10,6 +10,9 @@
 	page({
 		hashbang:true
 	});
+
+	$(document).keyup(tecla);
+
 	function index() {
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
@@ -129,27 +132,58 @@
 		});
 
 	}
-	// var presionLetra = $('body').keyDown(mostrarCodigo);
 
-	// function mostrarCodigo(e) {
-	// 	console.log(e.keyCode);
+	function tecla(e) {
+		var teclaPresionada = e.keyCode;
+		console.log(teclaPresionada);
+		// console.log(direccion);
+		if(teclaPresionada == 39){
+			switch(location.hash){
+				case "#!/proyectos":
+					page.redirect('/proyecto-dos');
+					break;
+				case "#!/proyecto-dos":
+					page.redirect('/proyecto-tres');
+					break;
+				case "#!/proyecto-tres":
+					page.redirect('/proyecto-cuatro');
+					break;
+			}
+			
+		}else if(teclaPresionada == 37){
+			switch(location.hash){
+				case "#!/proyecto-cuatro":
+				page.redirect('/proyecto-tres');
+				break;
+				case "#!/proyecto-tres":
+				page.redirect('/proyecto-dos');
+				break;
+				case "#!/proyecto-dos":
+				page.redirect('/proyectos');
+				break;
+			}
+		}
 		
-	// }
+
+	}
 
 	function proyectos(){
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
 		// mostrarCodigo();
 		var colorProyectos = $('.formato-proyectos').css('background-color');
+		console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
 		$('#proyectos').removeClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#proyecto-dos').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
 		$('#proyecto-cuatro').addClass('hidden');
+		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoDos(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
+		console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
 		$('#proyecto-dos').removeClass('hidden');
 		$('#proyectos').addClass('hidden');
@@ -157,6 +191,7 @@
 		$('#index').addClass('hidden');
 		$('#proyecto-tres').addClass('hidden');
 		$('#proyecto-cuatro').addClass('hidden');
+		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoTres(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
@@ -167,6 +202,7 @@
 		$('#habilidades').addClass('hidden');
 		$('#index').addClass('hidden');
 		$('#proyecto-cuatro').addClass('hidden');
+		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoCuatro(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
@@ -177,6 +213,7 @@
 		$('#proyectos').addClass('hidden');
 		$('#habilidades').addClass('hidden');
 		$('#index').addClass('hidden');
+		$('#masHabilidades').addClass('hidden');
 	}
 
 	var splash = function () {
