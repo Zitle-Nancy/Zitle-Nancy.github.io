@@ -18,50 +18,26 @@
 	function index() {
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
+		$('.seccion').addClass('hidden');
 		$('#inicio').removeClass('hidden');
-		$('#fondo-sobre-mi').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
-		$('#proyecto-seis').addClass('hidden');
 	};
 
 	function sobreMi(){
 		// esta linea te dara el color de la seccion
 		var colorSobreMi = $('#fondo-sobre-mi').css('background-color');
 		$('body').css('background',colorSobreMi);
-		// console.log(colorSobreMi);
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
-		$('#inicio').addClass('hidden');
+		$('.seccion').addClass('hidden');
 		$('#fondo-sobre-mi').removeClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyectoTres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
-		$('#proyecto-seis').addClass('hidden');
 	}
 	function habilidades(){
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
 		var colorHabilidades = $('#habilidades').css('background-color');
 		$('body').css('background',colorHabilidades);
+		$('.seccion').addClass('hidden');
 		$('#habilidades').removeClass('hidden');
-		$('#fondo-sobre-mi').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
-		$('#proyecto-seis').addClass('hidden');
 		$('#habilidades-graficas').load('habilidades.html #seccion-habilidades', function() {
 			setTimeout(function () {
 				var habilidades = [
@@ -106,13 +82,8 @@
 	function masHabilidades(){
 		var colorMasHabilidades = $('#masHabilidades').css('background-color');
 		$('body').css('background',colorMasHabilidades);
+		$('.seccion').addClass('hidden');
 		$('#masHabilidades').removeClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
-		$('#proyecto-seis').addClass('hidden');
 		$('#habilidades-graficas-dos').load('habilidades.html #seccion-habilidades-dos', function() {
 			setTimeout(function(){
 				var masHabilidades=[
@@ -140,7 +111,6 @@
 				leerPagina(masHabilidades);
 			}, 200);
 		});
-
 	}
 
 	function tecla(e) {
@@ -185,91 +155,47 @@
 					break;
 			}
 		}
-		
-
 	}
 
 	function proyectos(){
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
-		// mostrarCodigo();
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
-		$('#proyecto-seis').addClass('hidden');
+		$('.seccion').addClass('hidden');
 		$('#proyectos').removeClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
 	}
 	function proyectoDos(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
-		$('#proyecto-seis').addClass('hidden');
+		$('.seccion').addClass('hidden');
 		$('#proyecto-dos').removeClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
 	}
 	function proyectoTres(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		$('body').css('background', colorProyectos);
-		$('#proyecto-seis').addClass('hidden');
+		$('.seccion').addClass('hidden');
 		$('#proyecto-tres').removeClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
 	}
 	function proyectoCuatro(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		$('body').css('background', colorProyectos);
-		$('#proyecto-seis').addClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
+		$('.seccion').addClass('hidden');
 		$('#proyecto-cuatro').removeClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoCinco(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		$('body').css('background', colorProyectos);
-		$('#proyecto-seis').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
+		$('.seccion').addClass('hidden');
 		$('#proyecto-cinco').removeClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoSeis(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		$('body').css('background', colorProyectos);
+		$('.seccion').addClass('hidden');
 		$('#proyecto-seis').removeClass('hidden');
-		$('#proyecto-cinco').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
 	}
 
 	var splash = function () {
@@ -278,7 +204,6 @@
 		var home = document.querySelector('.contenedor');
 		splashScreen.style.display = 'none';
 		home.classList.remove('hidden');
-
 	}
 
 	setTimeout(splash, 1500);
