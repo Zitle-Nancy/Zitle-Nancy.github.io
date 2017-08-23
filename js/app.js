@@ -7,6 +7,8 @@
 	page('/proyecto-tres',proyectoTres);
 	page('/proyectos',proyectos);
 	page('/proyecto-cuatro',proyectoCuatro);
+	page('/proyecto-cinco',proyectoCinco);
+	page('/proyecto-seis',proyectoSeis);
 	page({
 		hashbang:true
 	});
@@ -16,44 +18,26 @@
 	function index() {
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
+		$('.seccion').addClass('hidden');
 		$('#inicio').removeClass('hidden');
-		$('#fondo-sobre-mi').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
 	};
 
 	function sobreMi(){
 		// esta linea te dara el color de la seccion
 		var colorSobreMi = $('#fondo-sobre-mi').css('background-color');
 		$('body').css('background',colorSobreMi);
-		// console.log(colorSobreMi);
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
-		$('#inicio').addClass('hidden');
+		$('.seccion').addClass('hidden');
 		$('#fondo-sobre-mi').removeClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyectoTres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
 	}
 	function habilidades(){
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
 		var colorHabilidades = $('#habilidades').css('background-color');
 		$('body').css('background',colorHabilidades);
+		$('.seccion').addClass('hidden');
 		$('#habilidades').removeClass('hidden');
-		$('#fondo-sobre-mi').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
 		$('#habilidades-graficas').load('habilidades.html #seccion-habilidades', function() {
 			setTimeout(function () {
 				var habilidades = [
@@ -98,11 +82,8 @@
 	function masHabilidades(){
 		var colorMasHabilidades = $('#masHabilidades').css('background-color');
 		$('body').css('background',colorMasHabilidades);
+		$('.seccion').addClass('hidden');
 		$('#masHabilidades').removeClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
 		$('#habilidades-graficas-dos').load('habilidades.html #seccion-habilidades-dos', function() {
 			setTimeout(function(){
 				var masHabilidades=[
@@ -130,7 +111,6 @@
 				leerPagina(masHabilidades);
 			}, 200);
 		});
-
 	}
 
 	function tecla(e) {
@@ -148,72 +128,74 @@
 				case "#!/proyecto-tres":
 					page.redirect('/proyecto-cuatro');
 					break;
+				case "#!/proyecto-cuatro":
+					page.redirect('/proyecto-cinco');
+					break;
+				case "#!/proyecto-cinco":
+					page.redirect('/proyecto-seis');
+					break;
 			}
 			
 		}else if(teclaPresionada == 37){
 			switch(location.hash){
+				case "#!/proyecto-seis":
+					page.redirect('/proyecto-cinco');
+					break;
+				case "#!/proyecto-cinco":
+					page.redirect('/proyecto-cuatro');
+					break;
 				case "#!/proyecto-cuatro":
-				page.redirect('/proyecto-tres');
-				break;
+					page.redirect('/proyecto-tres');
+					break;
 				case "#!/proyecto-tres":
-				page.redirect('/proyecto-dos');
-				break;
+					page.redirect('/proyecto-dos');
+					break;
 				case "#!/proyecto-dos":
-				page.redirect('/proyectos');
-				break;
+					page.redirect('/proyectos');
+					break;
 			}
 		}
-		
-
 	}
 
 	function proyectos(){
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
-		// mostrarCodigo();
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
+		$('.seccion').addClass('hidden');
 		$('#proyectos').removeClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoDos(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
+		$('.seccion').addClass('hidden');
 		$('#proyecto-dos').removeClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoTres(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		$('body').css('background', colorProyectos);
+		$('.seccion').addClass('hidden');
 		$('#proyecto-tres').removeClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#proyecto-cuatro').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
 	}
 	function proyectoCuatro(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
 		$('body').css('background', colorProyectos);
+		$('.seccion').addClass('hidden');
 		$('#proyecto-cuatro').removeClass('hidden');
-		$('#proyecto-dos').addClass('hidden');
-		$('#proyecto-tres').addClass('hidden');
-		$('#proyectos').addClass('hidden');
-		$('#habilidades').addClass('hidden');
-		$('#index').addClass('hidden');
-		$('#masHabilidades').addClass('hidden');
+	}
+	function proyectoCinco(){
+		var colorProyectos = $('.formato-proyectos').css('background-color');
+		$('body').css('background', colorProyectos);
+		$('.seccion').addClass('hidden');
+		$('#proyecto-cinco').removeClass('hidden');
+	}
+	function proyectoSeis(){
+		var colorProyectos = $('.formato-proyectos').css('background-color');
+		$('body').css('background', colorProyectos);
+		$('.seccion').addClass('hidden');
+		$('#proyecto-seis').removeClass('hidden');
 	}
 
 	var splash = function () {
@@ -222,7 +204,6 @@
 		var home = document.querySelector('.contenedor');
 		splashScreen.style.display = 'none';
 		home.classList.remove('hidden');
-
 	}
 
 	setTimeout(splash, 1500);
