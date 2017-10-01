@@ -115,7 +115,7 @@
 
 	function tecla(e) {
 		var teclaPresionada = e.keyCode;
-		console.log(teclaPresionada);
+		// console.log(teclaPresionada);
 		// console.log(direccion);
 		if(teclaPresionada == 39){
 			switch(location.hash){
@@ -161,14 +161,14 @@
 		$('nav').addClass('bt-menu-close');
 		$('nav').removeClass('bt-menu-open');
 		var colorProyectos = $('.formato-proyectos').css('background-color');
-		console.log(colorProyectos);
+		// console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
 		$('.seccion').addClass('hidden');
 		$('#proyectos').removeClass('hidden');
 	}
 	function proyectoDos(){
 		var colorProyectos = $('.formato-proyectos').css('background-color');
-		console.log(colorProyectos);
+		// console.log(colorProyectos);
 		$('body').css('background', colorProyectos);
 		$('.seccion').addClass('hidden');
 		$('#proyecto-dos').removeClass('hidden');
